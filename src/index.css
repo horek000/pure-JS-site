@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+.favBtn {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #acac25;
+}
+.fa-solid.fa-xmark {
+  margin: 5px 5px 0 0;
+  position: relative;
+  font-size: 40px;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.nav__list-item {
+  list-style: none;
+  height: 8vh;
+  flex-basis: 20%;
+  text-align: center;
+  height: 100%;
+}
+.btn-nav {
+  background-color: rgb(29, 29, 45);
+  width: 100%;
+  border: none;
+  height: 8vh;
+  line-height: 8vh;
+  font-size: 28px;
+  text-decoration: none;
+  font-family: 'Harry Potter', sans-serif;
+  color: #acac25;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-nav:hover {
+  background-color: rgb(29, 28, 28);
+}
+.table {
+  margin-bottom: 30px;
+  position: relative;
+  left: 10%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  flex-direction: column;
+  box-shadow: 4px 9px 15px 0px rgba(93, 93, 115, 1);
+}
+.tbody {
+  width: 100%;
+}
+.table_container {
+  overflow: none;
+}
+.header {
+  width: 100%;
+}
+.header_tr {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  font-size: 24px;
+  justify-content: space-between;
+  background-color: rgb(29, 29, 45);
+  color: #acac25;
+}
+.header_th {
+  flex-basis: 15%;
+  text-align: center;
+  flex-grow: 1;
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 100;
+  border-left: 1px solid rgb(101, 101, 101);
+  transition: 0.3s;
+}
+.order {
+  cursor: pointer;
+}
+.header_th:first-child {
+  border-left: none;
+}
+.header_th:hover {
+  background-color: rgb(29, 28, 28);
+}
+.democlass {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.democlass td {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  height: 90px;
+  line-height: 90px;
+  font-size: 24px;
+  flex-basis: 15%;
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  border: solid 1px black;
+  flex-grow: 1;
+  font-family: 'Harry Potter', sans-serif;
+}
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.modal {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 40%;
+  background: linear-gradient(to left, #000000, #434343);
+  display: flex;
+  flex-direction: row;
+  border-radius: 2%;
+}
+.container {
+  flex-grow: 1;
+}
+.modalP {
+  padding: 10px 0 10px 10px;
+  font-size: 22px;
+  color: #acac25;
+  font-family: 'Harry Potter', sans-serif;
+}
+.close {
+  background-color: inherit;
+  border: none;
+  font-size: 24px;
+  color: #acac25;
+  transition: 0.3s;
+}
+.close:hover {
+  color: #4a4f06;
+  cursor: pointer;
+}
+.img-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.image {
+  font-family: 'Harry Potter', sans-serif;
+  width: 50%;
+  height: 60%;
+  color: #acac25;
+  display: block;
+}
+.add {
+  margin-right: 10px;
+  width: 40%;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 5px;
+  background-color: rgb(29, 29, 45);
+  font-family: 'Harry Potter', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #acac25;
+  border: none;
+  border-radius: 4%;
+  transition: 0.3s;
+}
+.add:hover {
+  background-color: #000000;
+  cursor: pointer;
+}
+@media (max-width: 1201px) {
+  .btn-nav {
+    font-size: 23px;
+  }
+  .header_th {
+    font-size: 18px;
+  }
+
+  .democlass td {
+    font-size: 16px;
+  }
+  .modalP {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .navigation {
+    height: 8vh;
+  }
+  .favBtn {
+    margin: 0;
+    padding: 0;
+    line-height: 8vh;
+    height: 8vh;
+  }
+  .btn-nav {
+    line-height: 8vh;
+    height: 8vh;
+    font-size: 22px;
+  }
+  .header_tr {
+    height: 60px;
+  }
+  .header_th {
+    line-height: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .democlass td {
+    line-height: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+  .modalP {
+    font-size: 16px;
+  }
+  .image {
+    width: 50%;
+  }
+  .add {
+    width: 50%;
+    height: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-nav {
+    line-height: 8vh;
+    font-size: 14px;
+  }
+
+  .header_th {
+    font-size: 14px;
+  }
+  .table_container {
+    overflow-x: auto;
+  }
+  .table {
+    top: 0;
+    left: 10%;
+    width: 200%;
+    box-shadow: 4px 9px 15px 0px rgba(93, 93, 115, 1);
+  }
+  .democlass td {
+    font-size: 14px;
+  }
+  .modal {
+    width: 85%;
+  }
+  .modalP {
+    font-size: 15px;
+  }
+  .fa-solid.fa-xmark {
+    font-size: 28px;
+  }
+  .add {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .btn-nav {
+    line-height: 8vh;
+    font-size: 12px;
+  }
+
+  .table_container {
+    overflow-x: auto;
+  }
+
+  .table {
+    margin: 10px 0px;
+    left: 5%;
+    top: 0;
+    width: 200%;
+    box-shadow: none;
+  }
+  .header_tr {
+    height: 40px;
+  }
+  .header_th {
+    line-height: 40px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .democlass td {
+    line-height: 40px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .modalP {
+    height: 10%;
+    font-size: 12px;
+  }
+  .close {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .image {
+    margin-right: 10px;
+    height: 65%;
+  }
+}
+@media (max-width: 361px) {
+  .btn-nav {
+    font-size: 10px;
+  }
+  .table_container {
+    overflow-x: auto;
+  }
+  .modalP {
+    font-size: 13px;
+  }
+  .table {
+    margin-bottom: 10px;
+    left: 5%;
+    top: 0;
+    width: 200%;
+  }
+}

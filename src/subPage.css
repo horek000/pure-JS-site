@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --flexBasis: 26%;
+}
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ul_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.card {
+  margin: 10px 0 20px 0;
+  flex-basis: var(--flexBasis);
+  height: 40vh;
+  background: linear-gradient(to left, #232526, #414345);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3%;
+  transition: 0.5s;
+  color: #acac25;
+  font-family: 'Harry Potter', sans-serif;
+}
+.card p {
+  text-transform: uppercase;
+}
+.card:hover {
+  transform: scale(105%);
+}
+.card img {
+  margin-top: 5px;
+  height: 70%;
+  width: 40%;
+}
+.card button {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: rgb(29, 29, 45);
+  font-family: 'Harry Potter', sans-serif;
+  color: #acac25;
+  width: 40%;
+  height: 15%;
+  border: none;
+  border-radius: 4%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: rgb(29, 28, 28);
+}
+.cards-number {
+  margin: 10px 10px;
+  border: none;
+  background-color: inherit;
+  font-size: 18px;
+  color: #acac25;
+}
+.cards-number:hover {
+  color: #4a4f06;
+  cursor: pointer;
+}
+@media (max-width: 1201px) {
+  .card {
+    height: 34vh;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  .card img {
+    font-size: 12px;
+  }
+  .card button {
+    font-size: 12px;
+    width: 60%;
+  }
+}
+@media (max-width: 1025px) {
+  .card {
+    height: 32vh;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  .card img {
+    font-size: 12px;
+  }
+  .card button {
+    font-size: 12px;
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    height: 30vh;
+  }
+  .card p {
+    font-size: 11px;
+  }
+  .card img {
+    font-size: 11px;
+  }
+  .card button {
+    font-size: 10px;
+    width: 70%;
+  }
+}
+@media (max-width: 481px) {
+  .card p {
+    font-size: 8px;
+    text-align: center;
+  }
+  .card img {
+    margin-top: 5px;
+    height: 65%;
+    width: 55%;
+    font-size: 10px;
+  }
+  .card button {
+    margin: 0 auto 5px auto;
+    font-size: 10px;
+    color: #acac25;
+    width: 80%;
+    height: 14%;
+  }
+}
+@media (max-width: 321px) {
+  .card {
+    height: 25vh;
+    display: flex;
+  }
+  .card p {
+    text-align: center;
+    font-size: 8px;
+  }
+  .card img {
+    margin-top: 5px;
+    height: 55%;
+    width: 50%;
+    font-size: 10px;
+  }
+  .card button {
+    margin: 0 auto;
+    font-size: 8px;
+    color: #acac25;
+    width: 90%;
+    height: 14%;
+  }
+}

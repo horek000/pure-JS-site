@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Harry Potter data</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/d648811800.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <button class="btn-nav" data-value="all" data-js="navButton">
+            All studenst
+          </button>
+        </li>
+        <li class="nav__list-item">
+          <button
+            class="btn-nav"
+            data-value="Gryffindor"
+            data-js="navButton"
+            type="button"
+          >
+            Gryffindor
+          </button>
+        </li>
+        <li class="nav__list-item">
+          <button
+            class="btn-nav"
+            data-value="Hufflepuff"
+            data-js="navButton"
+            type="button"
+          >
+            Hufflepuff
+          </button>
+        </li>
+        <li class="nav__list-item">
+          <button
+            class="btn-nav"
+            data-value="Ravenclaw"
+            data-js="navButton"
+            type="button"
+          >
+            Ravenclaw
+          </button>
+        </li>
+        <li class="nav__list-item">
+          <button
+            class="btn-nav"
+            data-value="Slytherin"
+            data-js="navButton"
+            type="button"
+          >
+            Slytherin
+          </button>
+        </li>
+        <li class="nav__list-item btn-nav">
+          <a href="sub.html" class="favBtn">Favorites</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="table_container">
+      <table class="table">
+        <thead class="header">
+          <tr class="header_tr">
+            <th
+              class="order header_th"
+              data-js="sortButton"
+              data-order="asc"
+              data-key="name"
+            >
+              Name <i class="fa-solid fa-sort"></i>
+            </th>
+            <th
+              class="order header_th"
+              data-js="sortButton"
+              data-order="asc"
+              data-key="house"
+            >
+              House <i class="fa-solid fa-sort"></i>
+            </th>
+            <th
+              class="order header_th"
+              data-js="sortButton"
+              data-order="asc"
+              data-key="age"
+            >
+              Date of Birth <i class="fa-solid fa-sort"></i>
+            </th>
+            <th class="header_th">Is a Wizard?</th>
+            <th class="header_th">Ancestry</th>
+            <th class="header_th">Student/Stuff</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+    <div class="backdrop">
+      <div class="modal">
+        <div class="container">
+          <p class="name modalP">Name: <span data-js="name"></span></p>
+          <p class="house modalP">House: <span data-js="house"> </span></p>
+          <p class="dateOfBirth modalP">
+            DateOfBirth: <span data-js="dateOfBirth"></span>
+          </p>
+          <p class="wizard modalP">Wizard: <span data-js="wizard"></span></p>
+          <p class="hogwartsStudent modalP">
+            HogwartsStudent: <span data-js="hogwartsStudent"></span>
+          </p>
+          <p class="ancestry modalP">
+            Ancestry: <span data-js="ancestry"></span>
+          </p>
+        </div>
+        <div class="img-container">
+          <button class="close" type="button" data-js="modalClose">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <img src="" alt="no img in database" class="image" data-js="img" />
+          <button class="add" type="button" data-js="modalAdd"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
